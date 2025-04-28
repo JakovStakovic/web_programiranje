@@ -1,0 +1,7 @@
+# Ignore all node_modules directories in the project
+**/node_modules/
+
+# Other patterns to ignore
+*.log
+*.env
+*.DS_Store

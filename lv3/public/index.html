@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+	<html lang="hr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="index.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+		<title>Moja stranica</title>
+	</head>
+	<body>
+		<header>
+		<h1 class="glow">Dobrodosli na moju web stranicu</h1>
+		</header>
+        <header>
+			<!--Dodavanje navigacije i dropdown menua-->
+            <nav aria-labelledby="primarna-navigacija">
+                <div class="dropdown">
+					<button class="dropbtn">MENU
+					 <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+					  <a href="../pages/index.html">Početna</a>
+					  <a href="../pages/grafikon.html">Kontakt</a>
+					  <a href="../pages/slike.html">O nama</a>
+					</div>
+				 </div>
+            </nav>
+        </header>
+    <main>
+		<!--Centriranje u sredinu i uredivanje tablice-->
+		<section class="centered-section">
+			<h1 class="title">Vremenski Podaci</h1>
+			<table>
+				<tr>
+					<th>Temperature (°C)</th>
+					<th>Humidity (%)</th>
+					<th>Wind Speed (km/h)</th>
+					<th>Precipitation (%)</th>
+					<th>Cloud Cover</th>
+					<th>Atmospheric Pressure</th>
+					<th>UV Index</th>
+					<th>Season</th>
+					<th>Visibility (km)</th>
+					<th>Location</th>
+					<th>Weather Type</th>
+				</tr>
+				<tr><td>23</td><td>69</td><td>9.5</td><td>10</td><td>clear</td><td>1012.91</td><td>9</td><td>Spring</td><td>8.5</td><td>inland</td><td>Sunny</td></tr>
+				<tr><td>29</td><td>82</td><td>18</td><td>78</td><td>overcast</td><td>991.54</td><td>3</td><td>Spring</td><td>4</td><td>inland</td><td>Rainy</td></tr>
+				<tr><td>36</td><td>48</td><td>3.5</td><td>11</td><td>partly cloudy</td><td>1024.92</td><td>10</td><td>Autumn</td><td>5.5</td><td>mountain</td><td>Sunny</td></tr>
+				<tr><td>32</td><td>35</td><td>5.5</td><td>9</td><td>partly cloudy</td><td>1010.24</td><td>6</td><td>Summer</td><td>9</td><td>coastal</td><td>Sunny</td></tr>
+				<tr><td>23</td><td>23</td><td>3.5</td><td>8</td><td>clear</td><td>1027.69</td><td>5</td><td>Spring</td><td>6.5</td><td>mountain</td><td>Sunny</td></tr>
+				<tr><td>30</td><td>57</td><td>12.5</td><td>33</td><td>overcast</td><td>1002.2</td><td>1</td><td>Autumn</td><td>7</td><td>inland</td><td>Cloudy</td></tr>
+				<tr><td>28</td><td>65</td><td>1.5</td><td>20</td><td>partly cloudy</td><td>1007</td><td>4</td><td>Spring</td><td>8.5</td><td>mountain</td><td>Cloudy</td></tr>
+				<tr><td>29</td><td>96</td><td>11.5</td><td>79</td><td>partly cloudy</td><td>1013.23</td><td>0</td><td>Spring</td><td>1</td><td>inland</td><td>Rainy</td></tr>
+				<tr><td>35</td><td>63</td><td>8</td><td>3</td><td>clear</td><td>1029.83</td><td>10</td><td>Spring</td><td>5</td><td>mountain</td><td>Sunny</td></tr>
+				<tr><td>18</td><td>82</td><td>8.5</td><td>83</td><td>overcast</td><td>999.13</td><td>0</td><td>Summer</td><td>2.5</td><td>coastal</td><td>Rainy</td></tr>
+				<tr><td>8</td><td>90</td><td>1.5</td><td>70</td><td>partly cloudy</td><td>1011.19</td><td>10</td><td>Spring</td><td>7.5</td><td>mountain</td><td>Cloudy</td></tr>
+				<tr><td>19</td><td>65</td><td>2.5</td><td>20</td><td>partly cloudy</td><td>1016.81</td><td>1</td><td>Spring</td><td>8</td><td>inland</td><td>Cloudy</td></tr>
+				<tr><td>28</td><td>72</td><td>14</td><td>73</td><td>partly cloudy</td><td>1005.12</td><td>1</td><td>Summer</td><td>1</td><td>coastal</td><td>Rainy</td></tr>
+				<tr><td>40</td><td>94</td><td>15</td><td>97</td><td>clear</td><td>1021.59</td><td>3</td><td>Autumn</td><td>4.5</td><td>coastal</td><td>Sunny</td></tr>
+				<tr><td>15</td><td>61</td><td>11</td><td>63</td><td>overcast</td><td>1006.12</td><td>3</td><td>Spring</td><td>4.5</td><td>mountain</td><td>Rainy</td></tr>
+				<tr><td>26</td><td>90</td><td>26</td><td>88</td><td>partly cloudy</td><td>998.97</td><td>4</td><td>Summer</td><td>2.5</td><td>coastal</td><td>Rainy</td></tr>
+				<tr><td>26</td><td>67</td><td>11</td><td>74</td><td>overcast</td><td>993.37</td><td>1</td><td>Spring</td><td>1.5</td><td>inland</td><td>Rainy</td></tr>
+			</table>
+
+		</section>
+
+		<section aria-labelledby="section1-heading" role="region" aria-describedby="section1-description">
+			<h2 id="section1-heading">Ovo je prvi section</h2>
+			<p id="section1-description">HTML5 omogućava semantičku strukturu koja poboljšava pristupačnost i SEO.</p>
+
+			<!-- Article inside section -->
+			<article aria-labelledby="article1-heading" aria-describedby="article1-description">
+				<h3 id="article1-heading">Članak 1: Semantički HTML</h3>
+				<p id="article1-description">Semantički HTML poboljšava pristupačnost web stranica i olakšava pretraživačima razumijevanje strukture stranice. Korištenje ispravnih HTML tagova kao što su <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, itd., web stranice postaju pristupačnije za korisnike s invaliditetom i pretraživače.</p>
+
+				<p>U HTML5, semantički tagovi pomažu pretraživačima bolje razumjeti koji je sadržaj važan na stranici. Na primjer, <code>&lt;article&gt;</code> označava samostalan sadržaj, dok <code>&lt;section&gt;</code> grupira srodne tematske informacije.</p>
+
+				<h4>Zašto koristiti semantički HTML?</h4>
+				<p>Semantički HTML omogućava bolje razumijevanje sadržaja, što je korisno za:</p>
+				<ul>
+					<li><strong>Pristupačnost</strong>: Korištenjem ispravnih HTML tagova omogućuje se lakša navigacija korisnicima s invaliditetom koji koriste ekranske čitače.</li>
+					<li><strong>SEO</strong>: Pretraživači bolje razumiju sadržaj i strukturiranost stranice, što može poboljšati pozicije na tražilicama.</li>
+					<li><strong>Organizacija sadržaja</strong>: Struktura stranice postaje jasnija i lakša za održavanje.</li>
+				</ul>
+
+				<p>Semantički HTML također pomaže u boljoj povezanosti između različitih dijelova stranice, čineći korisničko iskustvo fluidnijim i intuitivnijim.</p>
+			</article>
+		</section>
+
+		<section>
+			<article aria-labelledby="article1-heading" aria-describedby="article1-description">
+				<h3 id="article1-heading">Članak 1: Semantički HTML</h3>
+				<p id="article1-description">Semantički HTML poboljšava pristupačnost web stranica i olakšava pretraživačima razumijevanje strukture stranice. Korištenje ispravnih HTML tagova kao što su <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, itd., web stranice postaju pristupačnije za korisnike s invaliditetom i pretraživače.</p>
+
+				<p>U HTML5, semantički tagovi pomažu pretraživačima bolje razumjeti koji je sadržaj važan na stranici. Na primjer, <code>&lt;article&gt;</code> označava samostalan sadržaj, dok <code>&lt;section&gt;</code> grupira srodne tematske informacije.</p>
+
+				<h4>Zašto koristiti semantički HTML?</h4>
+				<p>Semantički HTML omogućava bolje razumijevanje sadržaja, što je korisno za:</p>
+				<ul>
+					<li><strong>Pristupačnost</strong>: Korištenjem ispravnih HTML tagova omogućuje se lakša navigacija korisnicima s invaliditetom koji koriste ekranske čitače.</li>
+					<li><strong>SEO</strong>: Pretraživači bolje razumiju sadržaj i strukturiranost stranice, što može poboljšati pozicije na tražilicama.</li>
+					<li><strong>Organizacija sadržaja</strong>: Struktura stranice postaje jasnija i lakša za održavanje.</li>
+				</ul>
+
+				<p>Semantički HTML također pomaže u boljoj povezanosti između različitih dijelova stranice, čineći korisničko iskustvo fluidnijim i intuitivnijim.</p>
+			</article>
+		</section>
+
+		<section>
+			<h1>Dinamički vremenski podatci</h1>
+			<table id="vrijeme-tablica">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Temperatura</th>
+						<th>Sezona</th>
+						<th>Lokacija</th>
+						<th>Vrsta vremena</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</section>
+
+		 <!-- dodati jedan aside na desnoj strani s ugrađenom google mapom/filmom ili slično-->
+
+
+		<!--dodati odgovarajuće elemente na temelju danog zadatka: tablice, slike, tekst
+		Nepotrebno obrisati! -->
+	</main>
+	<footer class="footer">
+		<p>&copy; 2025. Web Programiranje. Sva prava pridrzana.</p>
+	</footer>
+	<script src="scripts.js"></script>
+	</body>
+</html>

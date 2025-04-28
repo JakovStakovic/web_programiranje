@@ -1,0 +1,217 @@
+.glow {
+  font-size: 80px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0004e6, 0 0 40px #1700e6, 0 0 50px #24267a, 0 0 60px #311a50, 0 0 70px #2300e6;
+  }
+  to {
+    text-shadow: 0 0 20px #2c2136, 0 0 30px #461846, 0 0 40px #120c1a, 0 0 50px #1f1319, 0 0 60px #2b1821, 0 0 70px #1b0e15, 0 0 80px #2b1721;
+  }
+}
+
+nav {
+    overflow: hidden;
+    background-color: #33678a;
+    font-family: Arial;
+}
+  
+  /* Links inside the navbar */
+nav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+nav a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.title {
+    color: black;
+    padding: 20px;
+    display: flex;
+  }
+
+section:nth-child(4) h2, 
+section:nth-child(3) h2, 
+section:nth-child(2) h2 {
+  font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section:nth-child(4) p,
+section:nth-child(3) p,
+section:nth-child(2) p {
+  font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+section:nth-child(4), 
+section:nth-child(3), 
+section:nth-child(2) {
+    display: inline-block;
+    width: 30%;                  /* Each section will take up 30% of the container width */
+    margin: 30px;                /* Space between sections */
+    padding: 20px;
+    background-color: #f9f9f9;   /* Light background color */
+    border: 1px solid #ccc;      /* Border around each section */
+    border-radius: 8px;          /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+    vertical-align: top;         /* Align sections to the top */
+    box-sizing: border-box;      /* Ensure padding and border are included in width */
+  }
+
+/* The centered section */
+section:nth-child(1) {
+  margin: 25px;   /* Automatically centers this section horizontally */
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-child(1):hover,
+section:nth-child(2):hover,
+section:nth-child(3):hover,
+section:nth-child(4):hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Example hover effect */
+    transform: scale(1.02); /* Slightly scale up the section */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+section {
+  transition: all 0.3s ease; /* Ensure smooth transition when not hovered */
+}
+
+article {
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the title */
+.title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Style for tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style table headers */
+th {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 15px;
+}
+
+/* Style table cells */
+td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+/* Hover effect for rows */
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Make the table more responsive */
+@media screen and (max-width: 768px) {
+  table {
+      font-size: 14px;
+  }
+
+  th, td {
+      padding: 8px 10px;
+  }
+
+  body {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+}
+
+section {
+    flex: none;             /* Prevent sections from growing too large */
+    width: 100%;            /* Make each section take full width on small screens */
+    margin-bottom: 20px;    /* Add space between sections */
+ }
+
+ .footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  color: #333;
+}
+}
